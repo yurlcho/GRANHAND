@@ -1,0 +1,50 @@
+.ghimg{
+    margin: 0 auto;
+    width: 1600px;
+    height: 1580px;
+    /* background-color: rgb(206, 216, 243); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.ghimg_y {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ghimg_y .house {
+    width: 655px;
+    height: 680px;
+}
+.ghimg_y .house img {
+    width: 100%;
+    height: 100%;
+}
+.ghimg_y .feild {
+    width: 925px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ghimg_y .feild img {
+    width: 100%;
+    height: 330px;
+}
+.ghimg_y .feild img:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.ghimg_x {
+    display: flex;
+    width: 790px;
+    height: 878px;
+}
+.ghimg_x img {
+    width: 100%;
+}
+.ghimg_x img:nth-of-type(1) {
+    margin-right: 20px;
+}

@@ -1,0 +1,29 @@
+.ghimg2 {
+    margin: 0 auto;
+    width: 1600px;
+    height: 940px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 2px solid #A4B474;
+}
+.ghimg2_a {
+    width: 925px;
+    height: 936px;
+}
+.ghimg2_a img {
+    width: 100%;
+}
+
+.ghimg2_b {
+    width: 655px;
+    height: 458px;
+}
+.ghimg2_b img {
+    width: 100%;
+}
+.ghimg2_b img:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+

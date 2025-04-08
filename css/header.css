@@ -1,0 +1,77 @@
+#slider > header {
+    width: 100%;
+    height: 80px;
+    padding: 0 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    backdrop-filter: blur(26px);
+    background-color: rgba(74, 90, 79, 0.3);
+  }
+
+header .logo{
+    font-family: 'PartialSansKR-Regular';
+    font-size: 30px;
+    color: #e7e7e7;
+    
+}
+header nav {
+    display: flex;
+    align-items: center;
+    line-height: 50%;
+}
+header nav .exlink {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 18px;
+    gap: 6px;
+}
+header nav .exlink a {
+    text-decoration: none;
+    color: #e7e7e7;
+}
+header nav .exlink img, header nav .glo img {
+    width: 24px;
+    height: 24px;
+}
+
+#slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: pink;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#slider video {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+#slider .headertext {
+    position: absolute;
+    z-index: 100;
+    color:black;
+    top: 60%;
+    left: 8%;
+    mix-blend-mode: difference;
+}
+.headertext h1 {
+    font-size: 90px;
+    color: white;
+    font-family: 'Cafe24ClassicType-Regular';
+}
+.headertext p {
+    font-size: 46px;
+    color: white;
+}

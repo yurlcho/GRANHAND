@@ -62,7 +62,7 @@ header nav .exlink img, header nav .glo img {
     position: absolute;
     z-index: 100;
     color:black;
-    top: 68%;
+    top: 64%;
     left: 8%;
     mix-blend-mode: difference;
 }

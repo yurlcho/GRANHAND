@@ -84,7 +84,8 @@
 }
 
 .middle:hover::after {
-    content: "Lily of the Valley, Jasmine, Rose, Freesia, Peach, Apricot, Apple";
+    content: "Lily of the Valley, Jasmine, Rose, Freesia, Peach, Apricot, Apple"; 
+    /* \A 나중에 줄 바꿈할 때 쓰기! */
     white-space: pre-line;
     opacity: 1;
     backdrop-filter: blur(5px);

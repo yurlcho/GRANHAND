@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #A3B470;
 }
 .ghtext .ghtext1 .bf1{
     width: 780px;
@@ -24,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #C2D391;
 }
 .ghtext .ghtext2 .bf2{
     width: 480px;
@@ -35,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #8f8676;
 }
 .ghtext .ghtext3 .bf3{
     width: 950px;
@@ -46,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #9A9283;
 }
 .ghtext .ghtext4 .bf4{
     width: 560px;

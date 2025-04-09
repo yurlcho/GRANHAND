@@ -8,29 +8,121 @@
     justify-content: space-between;
 }
 
+/* top */
 .top {
     width: 100%;
     height: 460px;
-    overflow: hidden;
-}
-.top img {
-    width: 100%;
+    background-image: url('/GRANHAND/img_susie/susie_top2.jpg');
+    background-size: cover;
+    position:relative;
+    transition: all 2s ease-in-out;
 }
 
+.top::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0px);
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none; /* 마우스 이벤트 방해 안 하게 */
+}
+
+.top:hover::after {
+    content: "Lemon, Black Currant, Tangerine, Cut Grass";
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    white-space: pre-wrap;
+}
+
+/* middle */
 .middle {
     width: 100%;
     height: 460px;
-    overflow: hidden;
+    background: url('/GRANHAND/img_susie/susie_middle.jpg');
+    background-size: cover;
 }
-.middle img{
-    width: 100%;
-}
-
-.bottom {
+.middle {
     width: 100%;
     height: 460px;
-    overflow: hidden;
+    background-image: url('/GRANHAND/img_susie/susie_middle.jpg');
+    background-size: cover;
+    position:relative;
+    transition: all 2s ease-in-out;
 }
-.bottom img{
+
+.middle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0px);
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none; /* 마우스 이벤트 방해 안 하게 */
+}
+
+.middle:hover::after {
+    content: "Lily of the Valley, Jasmine, Rose, Freesia, Peach, Apricot, Apple";
+    white-space: pre-line;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+/* base */
+.base {
+    width: 100%;
+    height: 460px;
+    background: url('/GRANHAND/img_susie/susie_bottom2.jpg');
+    background-size: cover;
+    position:relative;
+    transition: all 2s ease-in-out;
+}
+.base::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0px);
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none; /* 마우스 이벤트 방해 안 하게 */
+}
+
+.base:hover::after {
+    content: "SandalWood, Cedar, Amber, White Musk";
+    white-space: pre-line;
+    opacity: 1;
+    backdrop-filter: blur(5px);
 }

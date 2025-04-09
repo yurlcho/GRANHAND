@@ -48,3 +48,10 @@
 .ghimg_x img:nth-of-type(1) {
     margin-right: 20px;
 }
+
+.ghimg_x img:hover {
+    opacity: 0.6;
+}
+.ghimg_y img:hover {
+    opacity: 0.6;
+}

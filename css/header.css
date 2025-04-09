@@ -12,7 +12,7 @@
     right: 0;
     z-index: 6;
     backdrop-filter: blur(26px);
-    background-color: rgba(74, 90, 79, 0.3);
+    background-color: rgba(88, 88, 88, 0.5);
   }
 
 header .logo{
@@ -62,7 +62,7 @@ header nav .exlink img, header nav .glo img {
     position: absolute;
     z-index: 100;
     color:black;
-    top: 60%;
+    top: 68%;
     left: 8%;
     mix-blend-mode: difference;
 }

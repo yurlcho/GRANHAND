@@ -15,6 +15,9 @@
 .ghimg2_a img {
     width: 100%;
 }
+.ghimg2_a img:hover {
+    opacity: 0.6;
+}
 
 .ghimg2_b {
     width: 655px;

@@ -46,7 +46,7 @@ header nav .exlink img, header nav .glo img {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: pink;
+    /* background-color: pink; */
     margin: 0 auto;
     overflow: hidden;
 }

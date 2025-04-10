@@ -63,6 +63,30 @@
     font-family: 'Cafe24ClassicType-Regular' !important;
 }
 
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  
+  .fade-in-text.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 딜레이 순차 지정 */
+  .delay1 {
+    transition-delay: 0.1s;
+  }
+  .delay2 {
+    transition-delay: 0.2s;
+  }
+  .delay3 {
+    transition-delay: 0.3s;
+  }
+  .delay4 {
+    transition-delay: 0.4s;
+  }
 
 
 

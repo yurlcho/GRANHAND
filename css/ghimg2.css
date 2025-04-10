@@ -1,12 +1,10 @@
 .ghimg2 {
     margin: 0 auto;
     width: 1600px;
-    height: 940px;
-    margin-top: 130px;
+    height: 1020px;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    border-top: 2px solid #A4B474;
 }
 .ghimg2_a {
     width: 925px;

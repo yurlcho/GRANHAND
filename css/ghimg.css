@@ -49,9 +49,24 @@
     margin-right: 20px;
 }
 
-.ghimg_x img:hover {
-    opacity: 0.6;
-}
-.ghimg_y img:hover {
-    opacity: 0.6;
-}
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  
+  .fade-in-text.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 딜레이 */
+  .delay-h {
+    transition-delay: 0.2s;
+  }
+  .delay-fe {
+    transition-delay: 0.4s;
+  }
+  .delay-fl {
+    transition-delay: 0.6s;
+  }

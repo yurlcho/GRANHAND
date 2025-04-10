@@ -1,78 +1,245 @@
-.granhand {
-    width: 1600px;
-    height: 1130px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 130px;
-    isolation: isolate;
+/* 모바일 */
+@media (max-width: 600px) {
+    .granhand {
+        width: 1600px;
+        height: 1130px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 130px;
+        isolation: isolate;
+    }
+    
+    .susie1 {
+        width: 35%;
+        height: auto;
+    }
+    .susie1 img{
+        width: 100%;
+        height: auto;
+    }
+    .susie1 img:hover {
+        opacity: 0.6;
+    }
+    .susie2 {
+        margin-top:5%;
+        width: 60%;
+        height: auto;
+        z-index: 4;
+    }
+    .susie2 img {
+        width: 100%;
+    }
+    .susie2 img:hover {
+        opacity: 0.6;
+    }
+    .susietextbox {
+        position: absolute;
+        top: 76%;
+        z-index: 3;
+        color: #A174B5;;
+    }
+    
+    .susietextbox h1 {
+        font-size: 90px;
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextbox p {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+    
+    .susietextboxblend {
+        position: absolute;
+        top: 76%;
+        color: white;
+        z-index: 5;
+        mix-blend-mode: difference;
+    }
+    .susietextboxblend h1 {
+        font-size: 90px;
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextboxblend p {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+        will-change: opacity, transtorm;
+    }
+    
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.susie1 {
-    width: 35%;
-    height: auto;
-}
-.susie1 img{
-    width: 100%;
-    height: auto;
-}
-.susie1 img:hover {
-    opacity: 0.6;
-}
-.susie2 {
-    margin-top:5%;
-    width: 60%;
-    height: auto;
-    z-index: 4;
-}
-.susie2 img {
-    width: 100%;
-}
-.susie2 img:hover {
-    opacity: 0.6;
-}
-.susietextbox {
-    position: absolute;
-    top: 76%;
-    z-index: 3;
-    color: #A174B5;;
+/* 태블릿 */
+@media (min-width: 600px) and (max-width: 1101px) {
+    .granhand {
+        width: 96%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 130px;
+        isolation: isolate;
+    }
+    
+    .susie1 {
+        width: 35%;
+        height: auto;
+    }
+    .susie1 img{
+        width: 100%;
+        height: auto;
+    }
+    .susie1 img:hover {
+        opacity: 0.6;
+    }
+    .susie2 {
+        margin-top:5%;
+        width: 60%;
+        height: auto;
+        z-index: 4;
+    }
+    .susie2 img {
+        width: 100%;
+    }
+    .susie2 img:hover {
+        opacity: 0.6;
+    }
+    .susietextbox {
+        position: absolute;
+        top: 74%;
+        z-index: 3;
+        color: #A174B5;;
+    }
+    
+    .susietextbox h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextbox p {
+        font-size: clamp(10px, 3.5vw, 30px);
+        line-height: 1.6;
+    }
+    
+    .susietextboxblend {
+        position: absolute;
+        top: 74%;
+        color: white;
+        z-index: 5;
+        mix-blend-mode: difference;
+    }
+    .susietextboxblend h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextboxblend p {
+        font-size: clamp(10px, 3.5vw, 30px);
+        line-height: 1.6;
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+        will-change: opacity, transtorm;
+    }
+    
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.susietextbox h1 {
-    font-size: 90px;
-    font-family: 'Cafe24ClassicType-Regular';
-}
-
-.susietextbox p {
-    font-size: 30px;
-    line-height: 1.6;
-}
-
-.susietextboxblend {
-    position: absolute;
-    top: 76%;
-    color: white;
-    z-index: 5;
-    mix-blend-mode: difference;
-}
-.susietextboxblend h1 {
-    font-size: 90px;
-    font-family: 'Cafe24ClassicType-Regular';
-}
-
-.susietextboxblend p {
-    font-size: 30px;
-    line-height: 1.6;
-}
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease-out;
-    will-change: opacity, transtorm;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+/* pc */
+@media (min-width: 1101px){
+    .granhand {
+        width: 1600px;
+        height: 1130px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 130px;
+        isolation: isolate;
+    }
+    
+    .susie1 {
+        width: 35%;
+        height: auto;
+    }
+    .susie1 img{
+        width: 100%;
+        height: auto;
+    }
+    .susie1 img:hover {
+        opacity: 0.6;
+    }
+    .susie2 {
+        margin-top:5%;
+        width: 60%;
+        height: auto;
+        z-index: 4;
+    }
+    .susie2 img {
+        width: 100%;
+    }
+    .susie2 img:hover {
+        opacity: 0.6;
+    }
+    .susietextbox {
+        position: absolute;
+        top: 76%;
+        z-index: 3;
+        color: #A174B5;;
+    }
+    
+    .susietextbox h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextbox p {
+        font-size: clamp(10px, 3.5vw, 30px);
+        line-height: 1.6;
+    }
+    
+    .susietextboxblend {
+        position: absolute;
+        top: 76%;
+        color: white;
+        z-index: 5;
+        mix-blend-mode: difference;
+    }
+    .susietextboxblend h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextboxblend p {
+        font-size: clamp(10px, 3.5vw, 30px);
+        line-height: 1.6;
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+        will-change: opacity, transtorm;
+    }
+    
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -130,7 +130,7 @@
 @media(min-width: 600px) and (max-width: 1100px) {
     .note {
         margin: 0 auto;
-        width: 98%;
+        width: 96%;
         height:auto;
         margin-top: 130px;
         display: flex;

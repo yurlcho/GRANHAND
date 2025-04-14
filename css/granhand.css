@@ -9,6 +9,7 @@
         position: relative;
         margin-top: 130px;
         isolation: isolate;
+        padding: 0 20px;
     }
     
     .susie1 {
@@ -81,7 +82,7 @@
 }
 
 /* 태블릿 */
-@media (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1100px) {
     .granhand {
         width: 96%;
         height: auto;
@@ -136,6 +137,91 @@
     .susietextboxblend {
         position: absolute;
         top: 74%;
+        color: white;
+        z-index: 5;
+        mix-blend-mode: difference;
+    }
+    .susietextboxblend h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextboxblend p {
+        font-size: clamp(10px, 2.6vw, 30px);
+        line-height: 1.6;
+    }
+    .fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+        will-change: opacity, transtorm;
+    }
+    
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 모바일*/
+@media(max-width: 800px) {
+    .granhand {
+        width: 98%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 80px;
+        isolation: isolate;
+    }
+    
+    .susie1 {
+        width: 50%;
+        height: auto;
+        position: absolute;
+    }
+    .susie1 img{
+        width: 100%;
+        height: auto;
+    }
+    .susie1 img:hover {
+        opacity: 0.6;
+    }
+    .susie2 {
+        position: relative;
+        margin-top:40%;
+        width: 80%;
+        height: auto;
+        left: 20%;
+        z-index: 4;
+    }
+    .susie2 img {
+        width: 100%;
+    }
+    .susie2 img:hover {
+        opacity: 0.6;
+    }
+    .susietextbox {
+        position: absolute;
+        top: 86%;
+        z-index: 3;
+        color: #A174B5;;
+    }
+    
+    .susietextbox h1 {
+        font-size: clamp(30px, 6vw, 90px);
+        font-family: 'Cafe24ClassicType-Regular';
+    }
+    
+    .susietextbox p {
+        font-size: clamp(10px, 2.6vw, 30px);
+        line-height: 1.6;
+    }
+    
+    .susietextboxblend {
+        position: absolute;
+        top: 86%;
         color: white;
         z-index: 5;
         mix-blend-mode: difference;

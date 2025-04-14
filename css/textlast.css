@@ -1,67 +1,213 @@
-.textlast {
-    margin: 0 auto;
-    width: 100%;
-    height: 400px;
-    /* background-color: bisque; */
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    overflow: hidden;
-}
-.textlast .flow_l div, .flow_ll div{
-    font-size: 36px;
-    font-weight: 600;
-    color: #D4C9B6;
-}
-.flow_l:hover .flowwrap_l {
-    animation-play-state: paused;
-    cursor: pointer;
-    color: #A4B474;
-}
-.flow_ll:hover .flowwrap_ll {
-    animation-play-state: paused;
-    cursor: pointer;
-    color: #9A9283;
-}
-/* 왼쪽 */
-.flow_l {
-    white-space: nowrap;
-    display: flex;
-    transition: 1s;
-}
-.flowwrap_l {
-    animation: flow_l 16s linear infinite;
-}
-@keyframes flow_l {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+@media (min-width: 1100px) {
+    .textlast {
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        /* background-color: bisque; */
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    .textlast .flow_l div, .flow_ll div{
+        font-size: clamp(20px, 3vw, 42px);
+        font-weight: 600;
+        color: #D4C9B6;
+    }
+    .flow_l:hover .flowwrap_l {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #A4B474;
+    }
+    .flow_ll:hover .flowwrap_ll {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #9A9283;
+    }
+    /* 왼쪽 */
+    .flow_l {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
+    }
+    .flowwrap_l {
+        animation: flow_l 16s linear infinite;
+    }
+    @keyframes flow_l {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+        100% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
     }
     
-    100% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+    .flow_ll {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
     }
+    .flowwrap_ll {
+        animation-play-state: paused;
+        animation: flow_ll 22s linear infinite;
+    }
+    @keyframes flow_ll {
+        0% {
+            -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+        
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }    
+
 }
 
-.flow_ll {
-    white-space: nowrap;
-    display: flex;
-    transition: 1s;
-}
-.flowwrap_ll {
-    animation-play-state: paused;
-    animation: flow_ll 22s linear infinite;
-}
-@keyframes flow_ll {
-    0% {
-        -webkit-transform: translateX(-200%);
-        transform: translateX(-200%);
+@media (min-width: 800px) and (max-width: 1100px) {
+    .textlast {
+        margin: 0 auto;
+        width: 100%;
+        height: 350px;
+        /* background-color: bisque; */
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    .textlast .flow_l div, .flow_ll div{
+        font-size: clamp(20px, 3vw, 42px);
+        font-weight: 600;
+        color: #D4C9B6;
+    }
+    .flow_l:hover .flowwrap_l {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #A4B474;
+    }
+    .flow_ll:hover .flowwrap_ll {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #9A9283;
+    }
+    /* 왼쪽 */
+    .flow_l {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
+    }
+    .flowwrap_l {
+        animation: flow_l 16s linear infinite;
+    }
+    @keyframes flow_l {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+        100% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
     }
     
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+    .flow_ll {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
     }
+    .flowwrap_ll {
+        animation-play-state: paused;
+        animation: flow_ll 22s linear infinite;
+    }
+    @keyframes flow_ll {
+        0% {
+            -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+        
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }    
+
+}
+
+
+@media(max-width: 800px) {
+    .textlast {
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+        /* background-color: bisque; */
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    .textlast .flow_l div, .flow_ll div{
+        font-size: clamp(20px, 3vw, 42px);
+        font-weight: 600;
+        color: #D4C9B6;
+    }
+    .flow_l:hover .flowwrap_l {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #A4B474;
+    }
+    .flow_ll:hover .flowwrap_ll {
+        animation-play-state: paused;
+        cursor: pointer;
+        color: #9A9283;
+    }
+    /* 왼쪽 */
+    .flow_l {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
+    }
+    .flowwrap_l {
+        animation: flow_l 16s linear infinite;
+    }
+    @keyframes flow_l {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+        100% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+    
+    .flow_ll {
+        white-space: nowrap;
+        display: flex;
+        transition: 1s;
+    }
+    .flowwrap_ll {
+        animation-play-state: paused;
+        animation: flow_ll 22s linear infinite;
+    }
+    @keyframes flow_ll {
+        0% {
+            -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+        
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }    
+
 }

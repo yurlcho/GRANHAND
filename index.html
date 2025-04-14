@@ -45,11 +45,32 @@
         ul,li,ol {text-decoration: none; list-style: none;}
 
         body {
-            background-color: #F3E9DC;
+            /* background-color: #F3E9DC; */
             scroll-behavior: smooth;
         }
     </style>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(".menu").click(function(){
+                $("nav ul").slideToggle();
+            });
+        });
+
+        $(window).resize(function(){
+            if(window.innerWidth<=800){
+                $(".menu").show();
+                $("nav ul").css("display", "block").hide();
+                $(".glo").text("language").css("color","white");
+            }else {
+                $(".menu").hide();
+                $("nav ul").show().css("display", "flex");
+                $(".glo").html('<img src="img_granhand/globe2.png" alt="language">');
+            }
+        });
+
+    </script>
 </head>
 
 <body>
@@ -63,25 +84,25 @@
 
         <header>
             <div class="h">
-            <div class="logo">
-                GRANHAND.
-            </div>
+                <div class="small">
+                    <div class="logo">GRANHAND.</div>
+                    <img src="img_granhand/menu2.png" alt="menu" class="menu">
+                </div>
             <nav>
-                <div class="exlink">
-                <p><a href="https://granhand.com/home">공식 홈페이지 바로가기</a></p>
-                <img src="img_granhand/external-link2.png" alt="external-link">
-                </div>
-    
-                <div class="glo">
-                <img src="img_granhand/globe2.png" alt="globe">
-                </div>
+                <ul>
+                    <li><a href="#" class="mo">Marine Orchid</a></li>
+                    <li class="exlink">
+                        <a href="https://granhand.com/home">공식 홈페이지 바로가기</a>
+                        <img src="img_granhand/external-link2.png" alt="external-link">
+                    </li>
+                    <li class="glo"><img src="img_granhand/globe2.png" alt="language"></li>
+                </ul>
             </nav>
             </div>
         </header>
     </div>
     
    
-
     <!-- 섹션_그랑핸드 -->
     <section class="granhand">
         <div class="susie1">

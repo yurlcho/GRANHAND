@@ -113,3 +113,15 @@
         margin-bottom: 10px;
     }
 }
+
+/* 모바일2 */
+@media(max-width: 600px) {
+    .ghimg2 {
+        margin: 0 auto;
+        width: 96%;
+        height: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}

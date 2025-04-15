@@ -262,7 +262,7 @@
         margin: 0 auto;
         width: 98%;
         height:auto;
-        margin-top: 100px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -314,7 +314,7 @@
         background-size: cover;
         position:relative;
         transition: all 2s ease-in-out;
-        margin-top: 16px;
+        margin-top: 10px;
     }
     
     .middle::after {
@@ -354,7 +354,7 @@
         background-size: cover;
         position:relative;
         transition: all 2s ease-in-out;
-        margin-top: 16px;
+        margin-top: 10px;
     }
     .base::after {
         content: "";

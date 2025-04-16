@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,20 +54,42 @@
     <script>
         $(function(){
             $(".menu").click(function(){
-                $("nav ul").slideToggle();
+                $("nav > ul").slideToggle();
             });
         });
 
-        $(window).resize(function(){
+        function language(){
             if(window.innerWidth<=800){
                 $(".menu").show();
-                $("nav ul").css("display", "block").hide();
-                $(".glo").text("language").css("color","white");
+                $("nav > ul").css("display", "block").hide();
+                $(".glo").html(`<li>language</li>
+                            <ul class="lang">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>`).css("color","white");
             }else {
                 $(".menu").hide();
                 $("nav ul").show().css("display", "flex");
-                $(".glo").html('<img src="img_granhand/globe2.png" alt="language">');
+                $(".glo").html(`<img src="img_granhand/globe2.png" alt="language">
+                            <ul class="lang">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>`);
             }
+        }
+      
+        $(window).on("load", function(){
+            language();
+        }).resize(function(){
+            language();
+        });
+
+        $(function(){
+            $(".glo").mouseover(function(){
+                $(this).children(".lang").stop().slideDown();
+            }).mouseout(function(){
+                $(".lang").stop().slideUp();
+            })
         });
 
     </script>
@@ -95,7 +117,12 @@
                         <a href="https://granhand.com/home">공식 홈페이지 바로가기</a>
                         <img src="img_granhand/external-link2.png" alt="external-link">
                     </li>
-                    <li class="glo"><img src="img_granhand/globe2.png" alt="language"></li>
+                    <li class="glo"><img src="img_granhand/globe2.png" alt="language">
+                        <ul class="lang">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             </div>
@@ -129,12 +156,9 @@
 
     <!-- 섹션_향노트 -->
     <section class="note">
-        <div class="top">
-        </div>
-        <div class="middle">
-        </div>
-        <div class="base">
-        </div>
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="base"></div>
     </section>
 
     <!-- 섹션_텍스트 -->
@@ -209,14 +233,14 @@
     </div>
 
 
-    <!-- 섹션_이미지2 -->
+    <!-- 섹션_이미지 two -->
     <section class="ghimg2">
             <div class="ghimg2_a">
                 <a href="https://granhand.com/sachet/?idx=176"><img src="img_granhand/susie.jpg" alt="susie"></a>
             </div>
             <div class="ghimg2_b">
-                <img src="img_granhand/Mask group.jpg" alt="">
-                <img src="img_granhand/Mask group-1.jpg" alt="">
+                <img src="img_granhand/Maskgroup.jpg" alt="A">
+                <img src="img_granhand/Maskgroup1.jpg" alt="a">
             </div>
     </section>
 

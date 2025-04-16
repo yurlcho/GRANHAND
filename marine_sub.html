@@ -84,17 +84,61 @@
                 margin-top: 120px;
             }
             </style>
+
+            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+            <script>
+                $(function(){
+                    $(".menu").click(function(){
+                        $("nav > ul").slideToggle();
+                    });
+                });
+
+                function language(){
+                    if(window.innerWidth<=800){
+                        $(".menu").show();
+                        $("nav > ul").css("display", "block").hide();
+                        $(".glo").html(`<li>language</li>
+                                    <ul class="lang">
+                                    <li><a href="#">한국어</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>`).css("color","white");
+                    }else {
+                        $(".menu").hide();
+                        $("nav ul").show().css("display", "flex");
+                        $(".glo").html(`<img src="img_granhand/globe2.png" alt="language">
+                                    <ul class="lang">
+                                    <li><a href="#">한국어</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>`);
+                    }
+                }
+            
+                $(window).on("load", function(){
+                    language();
+                }).resize(function(){
+                    language();
+                });
+
+                $(function(){
+                    $(".glo").mouseover(function(){
+                        $(this).children(".lang").stop().slideDown();
+                    }).mouseout(function(){
+                        $(".lang").stop().slideUp();
+                    })
+                });
+
+            </script>
 </head>
 
 
 <body>
     <!-- 헤더 -->
     <div id="slider">
-        <div class="marinetext">
+        <div class="headertext">
             <h1>Susie Salmon Sachet</h1>
             <p>A midday nap after eating sweet fruits.</p>
         </div>
-        <img src="" alt="">
+        <video src="mov/susie.mov.mp4" autoplay muted loop playsinline></video>
 
         <header>
             <div class="h">
@@ -104,12 +148,17 @@
                 </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="mo">Susie Salmon</a></li>
+                    <li><a href="marine_sub.html" class="mo">Marine Orchid</a></li>
                     <li class="exlink">
                         <a href="https://granhand.com/home">공식 홈페이지 바로가기</a>
                         <img src="img_granhand/external-link2.png" alt="external-link">
                     </li>
-                    <li class="glo"><img src="img_granhand/globe2.png" alt="language"></li>
+                    <li class="glo"><img src="img_granhand/globe2.png" alt="language">
+                        <ul class="lang">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             </div>

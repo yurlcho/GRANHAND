@@ -1,0 +1,13 @@
+.play {
+    max-width: 1600px;
+    height: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 120px;
+    /* background-color: skyblue; */
+}
+
+.play video {
+    width: 100%;
+    height: auto;
+}

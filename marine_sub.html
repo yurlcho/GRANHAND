@@ -12,6 +12,9 @@
         
         <!-- css 스타일시트 -->
         <link rel="stylesheet" href="marine_css/header.css">
+        <link rel="stylesheet" href="marine_css/marine.css">
+        <link rel="stylesheet" href="marine_css/play.css">
+        <link rel="stylesheet" href="marine_css/note.css">
         <link rel="stylesheet" href="marine_css/footer.css">
         <style>
             @font-face {
@@ -41,31 +44,6 @@
                 scroll-behavior: smooth;
             }
 
-            .marine {
-                max-width: 1600px;
-                height: 1180px;
-                padding: 0 20px;
-                margin: 0 auto;
-                background-color: pink;
-            }
-
-            .play {
-                max-width: 1600px;
-                height: 900px;
-                padding: 0 20px;
-                margin: 0 auto;
-                background-color: skyblue;
-                margin-top: 120px;
-            }
-
-            .note {
-                max-width: 1600px;
-                height: 2470px;
-                padding: 0 20px;
-                margin: 0 auto;
-                background-color: lightgreen;
-                margin-top: 120px;
-            }
             .mo_img {
                 max-width: 1600px;
                 height: 1650px;
@@ -135,10 +113,11 @@
     <!-- 헤더 -->
     <div id="slider">
         <div class="headertext">
-            <h1>Susie Salmon Sachet</h1>
-            <p>A midday nap after eating sweet fruits.</p>
+            <h1>Marine Orchid Sachet</h1>
+            <p>Driving down the lonesome coast.</p>
         </div>
-        <video src="mov/susie.mov.mp4" autoplay muted loop playsinline></video>
+        <div class="surf"><img src="img_granhand/surf.jpg" alt="surf"></div>
+        
 
         <header>
             <div class="h">
@@ -148,7 +127,7 @@
                 </div>
             <nav>
                 <ul>
-                    <li><a href="marine_sub.html" class="mo">Marine Orchid</a></li>
+                    <li><a href="index.html" class="mo">Susie Salmon</a></li>
                     <li class="exlink">
                         <a href="https://granhand.com/home">공식 홈페이지 바로가기</a>
                         <img src="img_granhand/external-link2.png" alt="external-link">
@@ -168,23 +147,47 @@
     <!-- 마린오키드 -->
     <section class="marine">
         <div class="marine_img">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img class="mrs1" src="img_granhand/marine2.jpg" alt="marine">
+        <img  class="mrs2" src="img_granhand/marine1.jpg" alt="marine">
         </div>
-        <h1></h1>
-        <p></p>
+
+        <h1>Marine Orchid Sachet</h1>
+        <p>Top. Mandarin, Pear, Lemon <br>
+            Middle. Rose, Lily of the Valley, Orchid <br>
+            Base. Musk, Toffee, Patchouli
+        </p>
     </section>
 
     <!-- 영상 -->
      <section class="play">
-        <video src=""></video>
+        <video src="mov/water.mp4" autoplay muted loop playsinline></video>
      </section>
 
     <!-- 향 노트 -->
      <section class="note">
-        <div class="top"><img src="" alt=""></div>
-        <div class="middle"><img src="" alt=""></div>
-        <div class="base"><img src="" alt=""></div>
+        <div class="top">
+            <div class="toptext">
+                <h2>Top</h2>
+                <p>note.</p>
+            </div>
+            <div class="topimg"><img src="img_granhand/marine_top2.jpg" alt="top"></div> 
+        </div>
+
+        <div class="middle">
+            <div class="middletext">
+                <h2>Middle</h2>
+                <p>note.</p>
+            </div>
+            <div class="middleimg"><img src="img_granhand/marine_middle.jpg" alt="middle"></div>
+        </div>
+
+        <div class="base">
+            <div class="basetext">
+                <h2>Base</h2>
+                <p>note.</p>
+            </div>
+            <div class="baseimg"><img src="img_granhand/marine_bottom.jpg" alt="base"></div>
+        </div>
      </section>
 
     <!-- 이미지 모음 -->

@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="marine_css/marine.css">
         <link rel="stylesheet" href="marine_css/play.css">
         <link rel="stylesheet" href="marine_css/note.css">
+        <link rel="stylesheet" href="marine_css/moimg.css">
+        <link rel="stylesheet" href="marine_css/molast.css">
         <link rel="stylesheet" href="marine_css/footer.css">
         <style>
             @font-face {
@@ -42,24 +44,6 @@
             body {
                 /* background-color: #F3E9DC; */
                 scroll-behavior: smooth;
-            }
-
-            .mo_img {
-                max-width: 1600px;
-                height: 1650px;
-                padding: 0 20px;
-                margin: 0 auto;
-                background-color: lightcyan;
-                margin-top: 120px;
-            }
-
-            .mo_last {
-                max-width: 1600px;
-                height: 940px;
-                padding: 0 20px;
-                margin: 0 auto;
-                background-color: lightgray;
-                margin-top: 120px;
             }
             </style>
 
@@ -166,39 +150,40 @@
     <!-- 향 노트 -->
      <section class="note">
         <div class="top">
-            <div class="toptext">
-                <h2>Top</h2>
-                <p>note.</p>
-            </div>
             <div class="topimg"><img src="img_granhand/marine_top2.jpg" alt="top"></div> 
+            <div class="toptext">
+                <h2>Top note.</h2>
+                <p>Mandarin, Pear, Lemon</p>
+            </div>
         </div>
 
         <div class="middle">
-            <div class="middletext">
-                <h2>Middle</h2>
-                <p>note.</p>
-            </div>
             <div class="middleimg"><img src="img_granhand/marine_middle.jpg" alt="middle"></div>
+            <div class="middletext">
+                <h2>Middle note.</h2>
+                <p>Rose, Lily of the Valley, Orchid</p>
+            </div>
         </div>
 
         <div class="base">
-            <div class="basetext">
-                <h2>Base</h2>
-                <p>note.</p>
-            </div>
             <div class="baseimg"><img src="img_granhand/marine_bottom.jpg" alt="base"></div>
+            <div class="basetext">
+                <h2>Base note.</h2>
+                <p>Musk, Toffee, Patchouli</p>
+            </div>
         </div>
      </section>
 
     <!-- 이미지 모음 -->
      <section class="mo_img">
         <div class="mo_img1">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="surf"><img src="img_granhand/surf2.jpg" alt="surf"></div>
+            <div class="ocean"><img src="img_granhand/ocean.jpg" alt="ocean"></div>
+            
         </div>
         <div class="mo_img2">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="beach"><img src="img_granhand/beach2.jpg" alt="beach2"></div>
+            <div class="drive"><img src="img_granhand/drive.jpg" alt="drive"></div>
         </div>
         <p></p>
      </section>
@@ -206,11 +191,11 @@
     <!-- 마지막 이미지 -->
      <section class="mo_last">
         <div class="mo_last1">
-            <img src="" alt="">
+            <img src="img_granhand/marine.jpg" alt="marine">
         </div>
         <div class="mo_last2">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="img_granhand/Maskgroup_marine1.jpg" alt="marine">
+            <img src="img_granhand/Maskgroup_marine2.jpg" alt="marine">
         </div>
 
      </section>
@@ -219,5 +204,7 @@
     <footer>
         <p>SOMETIMES YOU WIN, SOMETIMES YOU LEARN.</p>
     </footer>
+
+    <script src="script/scrollfade.js"></script>
 </body>
 </html>

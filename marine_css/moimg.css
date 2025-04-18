@@ -15,19 +15,35 @@
 .mo_img1 .surf {
     width: 790px;
     height: auto;
+    overflow: hidden;
 }
 .mo_img1 .surf img {
     width:100%;
     height: 100%;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.4s linear;
+}
+.mo_img1 .surf img:hover {
+    transform: scale(1.4) !important;
 }
 .mo_img1 .ocean {
     width: 790px;
     height: auto;
     margin-left: 20px;
+    overflow: hidden;
 }
 .mo_img1 .ocean img {
     width: 100%;
     height: 100%;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.4s linear;
+}
+.mo_img1 .ocean img:hover {
+    transform: scale(1.4) !important;
 }
 
 .mo_img2 {
@@ -37,41 +53,49 @@
 .mo_img2 .beach {
     width: 790px;
     height: auto;
+    overflow: hidden;
 }
 .mo_img2 .beach img {
     width: 100%;
     height: 100%;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: all 0.4s linear;
+}
+.mo_img2 .beach img:hover {
+    transform: scale(1.4) !important;
 }
 .mo_img2 .drive {
     width: 790px;
     height: auto;
     margin-left: 20px;
+    overflow: hidden;
 }
 .mo_img2 .drive img {
     width: 100%;
     height: 100%;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: all 0.4s linear;
 }
-/* 참고 */
-/* .ghimg_x {
-    display: flex;
+.mo_img2 .drive img:hover {
+    transform: scale(1.4) !important;
+}
+
+.mo_img h3 {
+    font-size: clamp(12px, 3vw, 34px);
+    text-align: center;
+    font-weight: 500;
+    line-height: 58px;
     margin-top: 20px;
+    font-family: 'Cafe24ClassicType-Regular';
+    color: #9A9283;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
 }
-.ghimg_x .b1 {
-    width: 790px;
-    height: auto;
-    object-fit: cover;
+.mo_img h3:hover {
+    color: #121212;
 }
-.ghimg_x .b1 img {
-    width: 100%;
-    height: 100%;
-}
-.ghimg_x .b2 {
-    width: 790px;
-    height: auto;
-    object-fit: cover;
-    margin-left: 20px;
-}
-.ghimg_x .b2 img {
-    width: 100%;
-    height: 100%;
-} */

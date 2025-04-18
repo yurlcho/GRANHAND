@@ -10,4 +10,7 @@
 .play video {
     width: 100%;
     height: auto;
+    transform: translateY(50%);
+    transition: all 1s ease-in;
+    opacity: 0;
 }

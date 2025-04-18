@@ -10,6 +10,10 @@
 .marine_img {
     display: flex;
     justify-content: space-between;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
+
 }
 .marine_img .mrs1 {
     width: 920px;
@@ -17,10 +21,16 @@
     object-fit: cover;
     
 }
+.marine_img .mrs1:hover {
+    opacity: 0.6;
+}
 .marine_img .mrs2 {
     width: 655px;
     height: auto;
     object-fit: cover;
+}
+.marine_img .mrs2:hover {
+    opacity: 0.6;
 }
 
 .marine h1 {
@@ -28,9 +38,16 @@
     font-family: 'Cafe24ClassicType-Regular';
     text-align: center;
     margin-top: 20px;
+    color: #121212;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
 }
 .marine p {
     font-size: clamp(10px, 3vw, 30px);
     line-height: 1.4;
     text-align: center;
+    transition: all 1s ease-in;
+    opacity: 0;
+    transform: translateY(50%);
 }

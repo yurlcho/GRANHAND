@@ -34,8 +34,15 @@
     object-fit: cover;
 }
 
-.toptext {    
-    transition: all 1s;
+.toptext {
+    width: 600px;
+    height: 200px;
+    padding-top: 28px;
+    background-color: rgba(92, 92, 92, 0.2);
+    border: 0.5px solid #a1a1a1;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    transition: all 1s ease-in;
     opacity: 0;
     text-align: center;
     position: absolute;
@@ -60,7 +67,14 @@
     object-fit: cover;
 }
 .middletext {
-    transition: all 1s;
+    width: 800px;
+    height: 200px;
+    padding-top: 28px;
+    background-color: rgba(92, 92, 92, 0.2);
+    border: 0.5px solid #a1a1a1;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    transition: all 1s ease-in;
     opacity: 0;
     text-align: center;
     position: absolute;
@@ -84,7 +98,14 @@
     object-fit: cover;
 }
 .basetext {
-    transition: all 1s;
+    width: 600px;
+    height: 200px;
+    padding-top: 28px;
+    background-color: rgba(92, 92, 92, 0.2);
+    border: 0.5px solid #a1a1a1;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    transition: all 1s ease-in;
     opacity: 0;
     text-align: center;
     position: absolute;

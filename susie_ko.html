@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANHAND</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- css 스타일시트 -->
+    <link rel="stylesheet" href="susie_css/header.css">
+    <link rel="stylesheet" href="susie_css/granhand.css">
+    <link rel="stylesheet" href="susie_css/note.css">
+    <link rel="stylesheet" href="susie_css/ghtextko.css">
+    <link rel="stylesheet" href="susie_css/ghimg.css">
+    <link rel="stylesheet" href="susie_css/ghimg2.css">
+    <link rel="stylesheet" href="susie_css/textlast.css">
+    <link rel="stylesheet" href="susie_css/footer.css">
+
+   
+    <style>
+        @font-face {
+            font-family: 'PartialSansKR-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Cafe24ClassicType-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{
+            margin: 0; padding: 0;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            box-sizing: border-box;
+        }
+
+        ul,li,ol {text-decoration: none; list-style: none;}
+
+        body {
+            /* background-color: #F3E9DC; */
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(".menu").click(function(){
+                $("nav > ul").slideToggle();
+            });
+        });
+
+        function language(){
+            if(window.innerWidth<=800){
+                $(".menu").show();
+                $("nav > ul").css("display", "block").hide();
+                $(".glo").html(`<li>language</li>
+                            <ul class="lang">
+                            <li><a href="susie_ko.html">한국어</a></li>
+                            <li><a href="index.html">English</a></li>
+                        </ul>`).css("color","white");
+            }else {
+                $(".menu").hide();
+                $("nav ul").show().css("display", "flex");
+                $(".glo").html(`<img src="img_granhand/globe2.png" alt="language">
+                            <ul class="lang">
+                            <li><a href="susie_ko.html">한국어</a></li>
+                            <li><a href="index.html">English</a></li>
+                        </ul>`);
+            }
+        }
+      
+        $(window).on("load", function(){
+            language();
+        }).resize(function(){
+            language();
+        });
+
+        $(function(){
+            $(".glo").mouseover(function(){
+                $(this).children(".lang").stop().slideDown();
+            }).mouseout(function(){
+                $(".lang").stop().slideUp();
+            })
+        });
+    </script>
+</head>
+
+
+<body>
+        <!-- 헤더 -->
+        <div id="slider">
+            <div class="headertext">
+                <h1>Susie Salmon</h1>
+                <p>달콤한 과일을 먹은 뒤의 낮잠</p>
+            </div>
+            <video src="mov/susie.mp4" autoplay muted loop playsinline></video>
+    
+            <header>
+                <div class="h">
+                    <div class="small">
+                        <div class="logo">GRANHAND.</div>
+                        <img src="img_granhand/menu2.png" alt="menu" class="menu">
+                    </div>
+                <nav>
+                    <ul>
+                        <li><a href="marine_subko.html" class="mo">Marine Orchid</a></li>
+                        <li class="exlink">
+                            <a href="https://granhand.com/home">공식 홈페이지 바로가기</a>
+                            <img src="img_granhand/external-link2.png" alt="external-link">
+                        </li>
+                        <li class="glo"><img src="img_granhand/globe2.png" alt="language">
+                            <ul class="lang">
+                                <li><a href="susie_ko.html">한국어</a></li>
+                                <li><a href="index.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+        </div>
+        
+       
+        <!-- 섹션_그랑핸드 -->
+        <section class="granhand">
+            <div class="susie1">
+                <a href="https://granhand.com/sachet/?idx=176"><img src="img_granhand/susie1.jpg" alt="susie"></a>
+            </div>
+            
+            <div class="susie2">
+                <a href="https://granhand.com/sachet/?idx=176"><img src="img_granhand/susie2.jpg" alt="susie"></a>
+            </div>
+    
+            <div class="susietextbox fade-in">
+                <h1>Susie Salmon Sachet</h1>
+                <p>Top. Lemon, Black Currant, Tangerine, Cut Grass <br>
+                    Middle. Lily of the Vally, Jasmine, Rose, Freesia, Peach, Apricot, Apple <br>
+                    Base. SandalWood, Cedar, Amber, White Musk</p>
+            </div>
+            <div class="susietextboxblend fade-in">
+                <h1>Susie Salmon Sachet</h1>
+                <p>Top. Lemon, Black Currant, Tangerine, Cut Grass <br>
+                    Middle. Lily of the Vally, Jasmine, Rose, Freesia, Peach, Apricot, Apple <br>
+                    Base. SandalWood, Cedar, Amber, White Musk</p>
+            </div>
+        </section>
+    
+        <!-- 섹션_향노트 -->
+        <div class="note">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="base"></div>
+        </div>
+    
+        <!-- 섹션_텍스트 -->
+        <section class="ghtext">
+            <div class="ghtext1">
+                <h2 class="fade-in delay1">사쉐는 향료를 머금은 질석이</h2>
+                <img class="bf1" src="img_susie/text1.jpg" alt="text">
+            </div>
+            <div class="ghtext2">
+                <h2 class="fade-in delay2">담긴 향 주머니로,</h2>
+                <img class="bf2" src="img_susie/text2.jpg" alt="text">
+                <h2 class="fade-in delay2">옷장 및 차량과 같이</h2>
+            </div>
+            <div class="ghtext3">
+                <img class="bf3" src="img_susie/text3.jpg" alt="text">
+                <h2 class="fade-in delay3">비교적 좁은 공간에</h2>
+            </div>
+            <div class="ghtext4">
+                <h2 class="fade-in delay4">자연스럽게</h2>
+                <img class="bf4" src="img_susie/text4.jpg" alt="text">
+                <h2 class="fade-in delay4">향을 채워줍니다.</h2>
+            </div>
+            
+        </section>
+    
+        <!-- 섹션_이미지 -->
+        <div class="ghimg">
+            <div class="ghimg_y">
+                <div class="house fade-in">
+                    <img src="img_granhand/house.jpg" loading="lazy" alt="house">
+                </div>
+                <div class="feild fade-in">
+                    <img src="img_granhand/feild.jpg" loading="lazy" alt="feild">
+                    <img src="img_granhand/forest1.jpg" loading="lazy" alt="feild">
+                </div>
+            </div>
+            <div class="ghimg_x fade-in">
+                <div class="b1">
+                    <img src="img_granhand/boughtflower2.jpg" loading="lazy" alt="flower">
+                </div>
+                <div class="b2">
+                    <img src="img_granhand/boughtflower.jpg" loading="lazy" alt="flower">
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- 푸터 텍스트 -->
+        <div class="textlast">
+            <div class="flow_l">
+                <div class="flowwrap_l">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다.</div>
+                <div class="flowwrap_l">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다.</div>
+                <div class="flowwrap_l">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다.</div>
+            </div>
+            <div class="flow_ll">
+                <div class="flowwrap_ll">꽃 한다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다.</div>
+                <div class="flowwrap_ll">꽃 한다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다.</div>
+                <div class="flowwrap_ll">꽃 한다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다.</div>
+                <div class="flowwrap_ll">꽃 한다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다.</div>
+            </div>
+            <div class="flow_l">
+                <div class="flowwrap_l">냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다.</div>
+                <div class="flowwrap_l">냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다.</div>
+                <div class="flowwrap_l">냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다.</div>
+            </div>
+            <div class="flow_ll">
+                <div class="flowwrap_ll">옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</div>
+                <div class="flowwrap_ll">옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</div>
+                <div class="flowwrap_ll">옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</div>
+                <div class="flowwrap_ll">옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</div>
+            </div>
+        </div>
+    
+    
+        <!-- 섹션_이미지 two -->
+        <div class="ghimg2">
+                <div class="ghimg2_a">
+                    <a href="https://granhand.com/sachet/?idx=176"><img src="img_granhand/susie.jpg" alt="susie"></a>
+                </div>
+                <div class="ghimg2_b">
+                    <img src="img_granhand/Maskgroup.jpg" alt="A">
+                    <img src="img_granhand/Maskgroup1.jpg" alt="a">
+                </div>
+        </div>
+    
+        <footer>
+            <p>SOMETIMES YOU WIN, SOMETIMES YOU LEARN.</p>
+        </footer>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script/fadein.js"></script>
+        <script src="script/fadeindelay.js"></script>
+    </body>    
+</body>
+</html>

@@ -1,16 +1,54 @@
-.play {
-    max-width: 1600px;
-    height: 900px;
-    padding: 0 20px;
-    margin: 0 auto;
-    margin-top: 120px;
-    /* background-color: skyblue; */
+/* pc사이즈 */
+@media (min-width: 1100px) {
+    .play {
+        max-width: 1640px;
+        height: auto;
+        padding: 0 20px;
+        margin: 0 auto;
+        margin-top: 120px;
+        /* background-color: skyblue; */
+    }
+    
+    .play video {
+        width: 100%;
+        height: auto;
+        transform: translateY(50%);
+        transition: all 1s ease-in;
+        opacity: 0;
+    }
 }
 
-.play video {
-    width: 100%;
-    height: auto;
-    transform: translateY(50%);
-    transition: all 1s ease-in;
-    opacity: 0;
+/* 태블릿 사이즈 */
+@media (min-width: 800px) and (max-width: 1100px) {
+    .play {
+        max-width: 98%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 120px;
+    }
+    
+    .play video {
+        width: 100%;
+        height: auto;
+        transform: translateY(50%);
+        transition: all 1s ease-in;
+        opacity: 0;
+    }
+}
+/* 모바일 사이즈 */
+@media (max-width: 800px) {
+    .play {
+        max-width: 98%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    
+    .play video {
+        width: 100%;
+        height: auto;
+        transform: translateY(50%);
+        transition: all 1s ease-in;
+        opacity: 0;
+    }
 }

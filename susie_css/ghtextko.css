@@ -4,381 +4,109 @@
       margin: 0 auto;
       max-width: 1600px;
       height: auto;
-      font-size: clamp(8px, 2vw, 32px);
-      white-space: nowrap;
+      padding: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      align-items: center;
+      /* justify-content: space-around; */
       margin-top: 130px;
-      
+      white-space: nowrap;
   }
-  .ghtext1 {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: #A3B470;
-      font-weight: 600;
+  .ghtextrose {
+    width: 50%;
+    height: auto;
   }
-  .ghtext .ghtext1 .bf1{
-      width: 56%;
-      height: auto;
-      object-fit: cover;
+  .ghtextrose img {
+    width: 100%;
+    height: auto;
   }
-  
-  .ghtext2 {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: #C2D391;
-      margin-top: 60px;
+  .ghtext h2 {
+    font-size: clamp(8px, 2vw, 32px);
+    color: #8f8676;
+    text-align: center;
+    margin-left: 100px;
   }
-  .ghtext .ghtext2 .bf2{
-      width: 36%;
-      height: auto;
-      object-fit: cover;
-  }
-  
-  .ghtext3 {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: #8f8676;
-      margin-top: 60px;
-  }
-  .ghtext .ghtext3 .bf3{
-      width: 68%;
-      height: auto;
-      object-fit: cover;
-  }
-  
-  .ghtext4 {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: #9A9283;
-      margin-top: 60px;
-  }
-  .ghtext .ghtext4 .bf4{
-      width: 42%;
-      height: auto;
-      object-fit: cover;
-  }
-  
-  /* .ghtext h2 {
-      font-family: 'Cafe24ClassicType-Regular' !important;
-  } */
-  
-  .fade-in-text {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 1s ease;
-    }
-    
-    .fade-in-text.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* 딜레이 순차 지정 */
-    .delay1 {
-      transition-delay: 0.1s;
-    }
-    .delay2 {
-      transition-delay: 0.2s;
-    }
-    .delay3 {
-      transition-delay: 0.3s;
-    }
-    .delay4 {
-      transition-delay: 0.4s;
-    }
-  }
+}
   
   /* 태블릿 */
   @media(min-width: 800px) and (max-width: 1100px){
-      .ghtext {
-        margin: 0 auto;
-        max-width: 96%;
-        height: auto;
-        font-size: clamp(8px, 2.0vw, 24px);
-        white-space: nowrap;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 130px;
-    }
-    .ghtext1 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #A3B470;
-    }
-    .ghtext .ghtext1 .bf1{
-        width: 56%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #C2D391;
-        margin-top: 60px;
-    }
-    .ghtext .ghtext2 .bf2{
-        width: 36%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext3 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #8f8676;
-        margin-top: 60px;
-    }
-    .ghtext .ghtext3 .bf3{
-        width: 68%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext4 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #9A9283;
-        margin-top: 60px;
-    }
-    .ghtext .ghtext4 .bf4{
-        width: 42%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    /* .ghtext h2 {
-        font-family: 'Cafe24ClassicType-Regular' !important;
-    }
-     */
-    .fade-in-text {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s ease;
-      }
-      
-      .fade-in-text.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      
-      /* 딜레이 순차 지정 */
-      .delay1 {
-        transition-delay: 0.1s;
-      }
-      .delay2 {
-        transition-delay: 0.2s;
-      }
-      .delay3 {
-        transition-delay: 0.3s;
-      }
-      .delay4 {
-        transition-delay: 0.4s;
-      }
-    }
+    .ghtext {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 130px;
+      white-space: nowrap;
+  }
+  .ghtextrose {
+    width: 50%;
+    height: auto;
+  }
+  .ghtextrose img {
+    width: 100%;
+    height: 100%;
+  }
+  .ghtext h2 {
+    font-size: clamp(8px, 2vw, 32px);
+    color: #8f8676;
+    text-align: center;
+  }    }
   
   
   /* 모바일*/
   @media(max-width: 800px) {
-      .ghtext {
+    .ghtext {
         margin: 0 auto;
-        max-width: 100%;
-        height: 800px;
-        font-size: clamp(8px, 3.5vw, 24px);
+        max-width: 98%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
         white-space: nowrap;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top:50px;
-    }
-    .ghtext1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #A3B470;
-    }
-    .ghtext .ghtext1 .bf1{
-        width: 80%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #C2D391;
-        margin-top: 20px;
-    }
-    .ghtext .ghtext2 .bf2{
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #8f8676;
-        margin-top: 20px;
-    }
-    .ghtext .ghtext3 .bf3{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #9A9283;
-        margin-top: 20px;
-    }
-    .ghtext .ghtext4 .bf4{
-        width: 56%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    /* .ghtext h2 {
-        font-family: 'Cafe24ClassicType-Regular' !important;
-    } */
-    
-    .fade-in-text {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s ease;
-      }
-      
-      .fade-in-text.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      
-      /* 딜레이 순차 지정 */
-      .delay1 {
-        transition-delay: 0.1s;
-      }
-      .delay2 {
-        transition-delay: 0.2s;
-      }
-      .delay3 {
-        transition-delay: 0.3s;
-      }
-      .delay4 {
-        transition-delay: 0.4s;
-      }
-    }
+  }
+  .ghtextrose {
+    width: 655px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .ghtextrose img {
+    width: 100%;
+    height: auto;
+  }
+  .ghtext h2 {
+    font-size: clamp(8px, 3.5vw, 32px);
+    margin-left: 120px;
+    color: #8f8676;
+    text-align: center;
+    margin: 0 auto;
+  }    
+}
   
     /* 모바일2 */
     @media(max-width: 600px) {
       .ghtext {
         margin: 0 auto;
-        max-width: 100%;
-        height: 600px;
-        font-size: clamp(16px, 3vw, 24px);
-        white-space: nowrap;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top:50px;
-    }
-    .ghtext1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #A3B470;
-    }
-    .ghtext .ghtext1 .bf1{
-        width: 80%;
+        max-width: 98%;
         height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #C2D391;
+        margin-top: 60px;
+        white-space: nowrap;  
     }
-    .ghtext .ghtext2 .bf2{
-        width: 50%;
-        height: auto;
-        object-fit: cover;
+    .ghtextrose {
+      width: 100%;
+      height: auto;
     }
-    
-    .ghtext3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #8f8676;
+    .ghtextrose img {
+      width: 100%;
+      height: auto;
     }
-    .ghtext .ghtext3 .bf3{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .ghtext4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: #9A9283;
-    }
-    .ghtext .ghtext4 .bf4{
-        width: 56%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    /* .ghtext h2 {
-        font-family: 'Cafe24ClassicType-Regular' !important;
-    } */
-    
-    .fade-in-text {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s ease;
-      }
-      
-      .fade-in-text.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      
-      /* 딜레이 순차 지정 */
-      .delay1 {
-        transition-delay: 0.1s;
-      }
-      .delay2 {
-        transition-delay: 0.2s;
-      }
-      .delay3 {
-        transition-delay: 0.3s;
-      }
-      .delay4 {
-        transition-delay: 0.4s;
-      }
-    }
+    .ghtext h2 {
+      font-size: clamp(8px, 3vw, 32px);
+      color: #8f8676;
+      text-align: center;
+    }    
+  }
   

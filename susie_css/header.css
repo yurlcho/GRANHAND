@@ -122,8 +122,8 @@
         color: white;
         font-family: 'Cafe24ClassicType-Regular';
     }
-    .headertext p {
-        font-size: clamp(10px, 3.5vw, 40px);
+    .headertext h4 {
+        font-size: clamp(10px, 2.5vw, 40px);
         color: white;
     }
 }
@@ -251,12 +251,12 @@
         mix-blend-mode: difference;
     }
     .headertext h1 {
-        font-size: clamp(30px, 6vw, 90px);
+        font-size: clamp(18px, 6vw, 90px);
         color: white;
         font-family: 'Cafe24ClassicType-Regular';
     }
-    .headertext p {
-        font-size: clamp(10px, 3.5vw, 46px);;
+    .headertext h4 {
+        font-size: clamp(10px, 2.5vw, 40px);
         color: white;
     }
 
@@ -399,12 +399,12 @@
         z-index: 3;
     }
     .headertext h1 {
-        font-size: clamp(30px, 6vw, 90px);
+        font-size: clamp(18px, 6vw, 90px);
         color: white;
         font-family: 'Cafe24ClassicType-Regular';
     }
-    .headertext p {
-        font-size: clamp(10px, 3.5vw, 46px);;
+    .headertext h4 {
+        font-size: clamp(10px, 2.5vw, 40px);;
         color: white;
     }
 }

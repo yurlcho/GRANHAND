@@ -4,7 +4,7 @@
     margin: 0 auto;
     max-width: 1600px;
     height: auto;
-    font-size: clamp(8px, 2vw, 32px);
+    font-size: clamp(10px, 2.5vw, 44px);
     white-space: nowrap;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
     object-fit: cover;
 }
 
-.ghtext h2 {
+.ghtext h3 {
     font-family: 'Cafe24ClassicType-Regular' !important;
 }
 
@@ -98,7 +98,7 @@
       margin: 0 auto;
       max-width: 96%;
       height: auto;
-      font-size: clamp(8px, 2vw, 24px);
+      font-size: clamp(10px, 2.5vw, 44px);
       white-space: nowrap;
       display: flex;
       flex-direction: column;
@@ -156,7 +156,7 @@
       object-fit: cover;
   }
   
-  .ghtext h2 {
+  .ghtext h3 {
       font-family: 'Cafe24ClassicType-Regular' !important;
   }
   
@@ -192,8 +192,8 @@
     .ghtext {
       margin: 0 auto;
       max-width: 100%;
-      height: 800px;
-      font-size: clamp(8px, 3.5vw, 24px);
+      height: 680px;
+      font-size: clamp(10px, 2.5vw, 44px);
       white-space: nowrap;
       display: flex;
       flex-direction: column;
@@ -255,7 +255,7 @@
       object-fit: cover;
   }
   
-  .ghtext h2 {
+  .ghtext h3 {
       font-family: 'Cafe24ClassicType-Regular' !important;
   }
   
@@ -290,8 +290,8 @@
     .ghtext {
       margin: 0 auto;
       max-width: 100%;
-      height: 600px;
-      font-size: clamp(16px, 4vw, 24px);
+      height: 400px;
+      font-size: clamp(10px, 2.5vw, 44px);
       white-space: nowrap;
       display: flex;
       flex-direction: column;
@@ -350,7 +350,7 @@
       object-fit: cover;
   }
   
-  .ghtext h2 {
+  .ghtext h3 {
       font-family: 'Cafe24ClassicType-Regular' !important;
   }
   

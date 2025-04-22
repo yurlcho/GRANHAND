@@ -32,8 +32,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 5vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,8 +71,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 5vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -110,8 +110,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 5vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -161,8 +161,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -200,8 +200,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -239,8 +239,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -290,8 +290,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -329,8 +329,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -368,8 +368,8 @@
         backdrop-filter: blur(0px);
         transition: all 0.5s ease;
         color: white;
-        font-size: clamp(16px, 3.8vw, 42px);
-        font-weight: 600;
+        font-size: clamp(10px, 4vw, 38px);
+        font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;

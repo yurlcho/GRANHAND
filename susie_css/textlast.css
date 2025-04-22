@@ -11,7 +11,7 @@
         overflow: hidden;
     }
     .textlast .flow_l div, .flow_ll div{
-        font-size: clamp(20px, 3vw, 42px);
+        font-size: clamp(10px, 3vw, 40px);
         font-weight: 600;
         color: #D4C9B6;
     }

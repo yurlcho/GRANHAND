@@ -40,8 +40,8 @@
         opacity: 0.6;
     }
     
-    .marine h1 {
-        font-size: clamp(30px, 5vw, 90px);
+    .marine h2 {
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
         text-align: center;
         margin-top: 20px;
@@ -51,7 +51,7 @@
         transform: translateY(50%);
     }
     .marine p {
-        font-size: clamp(14px, 3vw, 30px);
+        font-size: clamp(10px, 3vw, 30px);
         line-height: 1.4;
         text-align: center;
         transition: all 1s ease-in;
@@ -101,8 +101,8 @@
         opacity: 0.6;
     }
     
-    .marine h1 {
-        font-size: clamp(30px, 6vw, 90px);
+    .marine h2 {
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
         text-align: center;
         margin-top: 20px;
@@ -112,7 +112,7 @@
         transform: translateY(50%);
     }
     .marine p {
-        font-size: clamp(14px, 3vw, 30px);
+        font-size: clamp(10px, 3vw, 30px);
         line-height: 1.4;
         text-align: center;
         transition: all 1s ease-in;
@@ -163,8 +163,8 @@
         opacity: 0.6;
     }
     
-    .marine h1 {
-        font-size: clamp(20px, 4vw, 90px);
+    .marine h2 {
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
         text-align: center;
         margin-top: 14px;
@@ -174,7 +174,7 @@
         transform: translateY(50%);
     }
     .marine p {
-        font-size: clamp(10px, 2.5vw, 30px);
+        font-size: clamp(10px, 3vw, 30px);
         line-height: 1.4;
         text-align: center;
         transition: all 1s ease-in;

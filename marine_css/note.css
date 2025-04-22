@@ -10,11 +10,11 @@
         margin: 130px auto 0 auto;
     }
     .note h2 {
-        font-size: clamp(30px, 6vw, 68px);
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
     }
     .note p {
-        font-size: clamp(20px, 4vw, 38px);
+        font-size: clamp(10px, 4vw, 34px);
     }
     
     .top {
@@ -110,11 +110,11 @@
         margin: 100px auto 0 auto;
     }
     .note h2 {
-        font-size: clamp(30px, 6vw, 68px);
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
     }
     .note p {
-        font-size: clamp(20px, 4vw, 38px);
+        font-size: clamp(10px, 4vw, 34px);
     }
     
     .top {
@@ -207,11 +207,11 @@
         margin-top: 50px;
     }
     .note h2 {
-        font-size: clamp(24px, 4vw, 68px);
+        font-size: clamp(18px, 6vw, 80px);
         font-family: 'Cafe24ClassicType-Regular';
     }
     .note p {
-        font-size: clamp(18px, 2.5vw, 38px);
+        font-size: clamp(10px, 3vw, 34px);
     }
     
     .top {

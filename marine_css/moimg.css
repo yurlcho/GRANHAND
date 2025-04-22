@@ -86,10 +86,10 @@
     }
     
     .mo_img h3 {
-        font-size: clamp(12px, 3vw, 34px);
+        font-size: clamp(10px, 2.5vw, 44px);
         text-align: center;
         font-weight: 500;
-        line-height: 58px;
+        line-height: 78px;
         margin-top: 20px;
         font-family: 'Cafe24ClassicType-Regular';
         color: #9A9283;
@@ -189,10 +189,10 @@
     }
     
     .mo_img h3 {
-        font-size: clamp(12px, 2.2vw, 34px);
+        font-size: clamp(10px, 2.5vw, 44px);
         text-align: center;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 54px;
         margin-top: 20px;
         font-family: 'Cafe24ClassicType-Regular';
         color: #9A9283;
@@ -302,10 +302,10 @@
     }
     
     .mo_img h3 {
-        font-size: clamp(12px, 2vw, 34px);
+        font-size: clamp(10px, 2.5vw, 44px);
         text-align: center;
         font-weight: 500;
-        line-height: 22px;
+        line-height: 32px;
         margin-top: 10px;
         font-family: 'Cafe24ClassicType-Regular';
         color: #9A9283;

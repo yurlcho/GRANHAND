@@ -4,7 +4,7 @@ $(window).scroll(function(){
     let notebase = $(".base").offset().top;
     let marineimg = $(".marine").offset().top;
     let marineh1 = $(".marine_img").offset().top;
-    let marinep = $(".marine h1").offset().top;
+    let marinep = $(".marine h2").offset().top;
     let marineplay = $(".play").offset().top;
     let surf = $(".mo_img").offset().top;
     let ocean = $(".mo_img").offset().top;
@@ -19,7 +19,7 @@ $(window).scroll(function(){
         $(".marine_img").css({transform: 'translateY(0)', opacity: 1})
     }
     if(ws>marineh1-300){
-        $(".marine h1").css({transform: 'translateY(0)', opacity: 1})
+        $(".marine h2").css({transform: 'translateY(0)', opacity: 1})
     }
     if(ws>marinep-500){
         $(".marine p").css({transform: 'translateY(0)', opacity: 1})

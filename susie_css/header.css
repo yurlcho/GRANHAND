@@ -404,7 +404,7 @@
         font-family: 'Cafe24ClassicType-Regular';
     }
     .headertext h4 {
-        font-size: clamp(10px, 2.5vw, 40px);;
+        font-size: clamp(10px, 2.5vw, 40px);
         color: white;
     }
 }

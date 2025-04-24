@@ -244,7 +244,7 @@
         width: 100%;
         height: 260px;
         overflow: hidden;
-        margin-top: 6px;
+        margin: 6px 0 auto;
     }
     .mo_img1 .ocean img {
         width: 100%;
@@ -285,7 +285,7 @@
         width: 100%;
         height: 260px;
         overflow: hidden;
-        margin-top: 6px;
+        margin: 6px 0 auto;
     }
     .mo_img2 .drive img {
         width: 100%;
@@ -296,6 +296,7 @@
         transition: all 0.4s linear;
         object-fit: cover;
         object-position: 50% 74%;
+    
     }
     .mo_img2 .drive img:hover {
         transform: scale(1.4) !important;

@@ -171,7 +171,6 @@
       transform: translateY(0);
     }
     
-    /* 딜레이 순차 지정 */
     .delay1 {
       transition-delay: 0.1s;
     }

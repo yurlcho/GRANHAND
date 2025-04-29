@@ -46,6 +46,7 @@
         }
     }
     
+    /* 오른쪽 */
     .flow_ll {
         white-space: nowrap;
         display: flex;
